@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.search-bar {
+    width: 50rem;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
