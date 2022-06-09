@@ -7,7 +7,6 @@ const useApi = (API) => {
     useEffect(() => {
       const fetchingData = async () => {
         const response = await axios.get(API);
-        console.log(response.data);
         setImgs(response.data);
       };
 
@@ -15,6 +14,7 @@ const useApi = (API) => {
     
     }, [API])
     
+
     
     return{
         imgs
