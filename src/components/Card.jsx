@@ -1,7 +1,5 @@
-import useApi from '../hooks/useApi';
 
-export const Card = () => {
-  const {linkImg,alt} = useApi();
+export const Card = ({linkImg,alt}) => {
   return (
     <div>
         <img src={linkImg} alt={alt} />
