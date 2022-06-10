@@ -73,16 +73,24 @@ body {
 }
 
 .container-list-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-list-button-item{
     width: 6rem;
     height: 3rem;
+    margin-bottom: 3rem;
     background-color: transparent;
     color: white;
     border: .2rem solid black;
     border-radius: 1rem;
 }
 
-.container-list-button:active,
-.container-list-button:hover
+.container-list-button-item:active,
+.container-list-button-item:hover
 {
     background-color: white;
     color: black;
