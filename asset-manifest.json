@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c9b1d12.css",
-    "main.js": "/static/js/main.dec3d379.js",
-    "index.html": "/index.html",
-    "main.0c9b1d12.css.map": "/static/css/main.0c9b1d12.css.map",
-    "main.dec3d379.js.map": "/static/js/main.dec3d379.js.map"
+    "main.css": "/ElvisGT/Search_Gif/static/css/main.0c9b1d12.css",
+    "main.js": "/ElvisGT/Search_Gif/static/js/main.dec3d379.js",
+    "index.html": "/ElvisGT/Search_Gif/index.html",
+    "main.0c9b1d12.css.map": "/ElvisGT/Search_Gif/static/css/main.0c9b1d12.css.map",
+    "main.dec3d379.js.map": "/ElvisGT/Search_Gif/static/js/main.dec3d379.js.map"
   },
   "entrypoints": [
     "static/css/main.0c9b1d12.css",
