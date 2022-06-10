@@ -9,7 +9,7 @@ const App= () => {
   let API = '';
   
   if(searchValue !== undefined && searchValue.length >= 3){
-    API = `https://api.giphy.com/v1/gifs/search?api_key=XewVACHbL6hep8eA8K8V9t3pRAiiHlrX&q=${searchValue}`;
+    API = `https://api.giphy.com/v1/gifs/search?api_key=XewVACHbL6hep8eA8K8V9t3pRAiiHlrX&q=${searchValue}&limit=15`;
   }
 
   const {imgs} = useApi(API);
@@ -17,23 +17,25 @@ const App= () => {
   return (
     <div className="container">
         <Search />
+        <button className="container-list-button" type="button">More</button>
+
         <div className="container-cards">
           {imgs.data !== undefined 
-            ?
+            ? 
               imgs.data.length > 0 &&
+              <>
               <ul className='container-list'>
                 {
                   imgs.data.map((img) => (
-                    <li key={img.id}><Card linkImg={img.url} alt={img.title}/></li>
+                    <li key={img.id}><Card linkImg={img.images.downsized.url} alt={img.title}/></li>
                   ))
                 }
               </ul>
-          
+              </>
             :
-              <h1>Empty</h1>
+              <h1 className='container-empty'>Waiting...</h1>
           }
         </div>
-        
     </div>
   );
 }
